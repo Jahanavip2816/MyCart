@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🛒 Products</h1>
+
+<input type="text" placeholder="Search products..." onkeyup="searchProducts()" id="searchInput" class="search">
+
+<div class="filters">
+    <button onclick="filterProducts('All')">All</button>
+    <button onclick="filterProducts('Mobile')">Mobile</button>
+    <button onclick="filterProducts('Laptop')">Laptop</button>
+    <button onclick="filterProducts('Accessory')">Accessory</button>
+    <button onclick="filterProducts('Clothing')">Clothing</button>
+</div>
+
+<a href="cart.html" class="cart-link">Go to Cart 🛍</a>
+
+<div class="products" id="productList"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
